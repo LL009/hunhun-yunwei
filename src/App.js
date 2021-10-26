@@ -1,7 +1,9 @@
+import HunhunYunwei from "./views/hunhun-yunwei/HunhunYunwei";
+import "./App.css"
 
 function App() {
   return (
-    <div>hello</div>
+    <HunhunYunwei></HunhunYunwei>
   );
 }
 
