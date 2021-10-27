@@ -33,7 +33,12 @@ export default function Yunwei() {
     };
     return (
       <>
-        <Form name="basic" onFinish={onFinish} >
+        <Form
+          name="basic"
+          onFinish={onFinish}
+          labelCol={{ span: 2 }}
+          wrapperCol={{ span: 16 }}
+        >
           <Form.Item
             label="公网IP地址"
             name="公网IP地址"

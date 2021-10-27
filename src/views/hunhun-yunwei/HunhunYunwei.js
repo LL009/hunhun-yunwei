@@ -6,6 +6,7 @@ import TopHeader from "../../components/TopHeader";
 import Home from "../hunhun-yunwei/home/Home"
 import Yunwei from "./yunwei/Yunwei";
 import "./HunhunYunwei.css"
+import YunweiAcl from "./yunwei/YunweiAcl";
 
 const { Content } = Layout;
 
@@ -28,6 +29,7 @@ export default function HunhunYunwei() {
             <Switch>
               <Route path="/home" component={Home} />
               <Route path="/yunwei" component={Yunwei} />
+              <Route path="/yunweiacl" component={YunweiAcl} />
               <Redirect from="/" to="/home" exact />
             </Switch>
           </HashRouter>

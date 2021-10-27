@@ -41,18 +41,18 @@ export default function SideMenu(props) {
         <Menu.Item key="1" icon={<UserOutlined />}>
           <a href="#/home">首页</a>
         </Menu.Item>
-        <Menu.Item
-          key="2"
-          icon={<VideoCameraOutlined />}
-        >
-          <a href="#/yunwei">运维</a>
+        <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+          <a href="#/yunwei">网络映射</a>
+        </Menu.Item>
+        <Menu.Item key="3" icon={<VideoCameraOutlined />}>
+          <a href="#/yunweiacl">网络ACL</a>
         </Menu.Item>
         <SubMenu key="sub1" icon={<UserOutlined />} title="User">
-          <Menu.Item key="3">Tom</Menu.Item>
-          <Menu.Item key="4">Bill</Menu.Item>
-          <Menu.Item key="5">Alex</Menu.Item>
+          <Menu.Item key="4">Tom</Menu.Item>
+          <Menu.Item key="5">Bill</Menu.Item>
+          <Menu.Item key="6">Alex</Menu.Item>
         </SubMenu>
-        <Menu.Item key="6" icon={<UploadOutlined />}>
+        <Menu.Item key="7" icon={<UploadOutlined />}>
           nav 3
         </Menu.Item>
       </Menu>
