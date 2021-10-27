@@ -1,9 +1,10 @@
 import { Layout } from "antd";
 import React from "react";
-import { Route, Switch, Redirect } from "react-router";
+import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import SideMenu from "../../components/SideMenu";
 import TopHeader from "../../components/TopHeader";
 import Home from "../hunhun-yunwei/home/Home"
+import Yunwei from "./yunwei/Yunwei";
 import "./HunhunYunwei.css"
 
 const { Content } = Layout;
@@ -23,10 +24,13 @@ export default function HunhunYunwei() {
             minHeight: 280,
           }}
         >
-          {/* <Switch>
-            <Route path="/home" component={Home} />
-            <Redirect from="/" to="/home" exact />
-          </Switch> */}
+          <HashRouter>
+            <Switch>
+              <Route path="/home" component={Home} />
+              <Route path="/yunwei" component={Yunwei} />
+              <Redirect from="/" to="/home" exact />
+            </Switch>
+          </HashRouter>
         </Content>
       </Layout>
     </Layout>
